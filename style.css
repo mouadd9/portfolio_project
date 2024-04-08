@@ -26,7 +26,7 @@ html {
     display: flex;
     height: 10vh;
     width: 100%;
-    padding: auto;
+    
     justify-content: space-between;
     align-items: center;
 
@@ -258,8 +258,8 @@ a:hover {
     }
 
     .container1 img {
-        width: 80%; /* Adjust image width to be responsive within the container */
-        height: auto; /* Maintain aspect ratio */
+        width: 50vw; /* Adjust image width to be responsive within the container */
+        height:auto; /* Maintain aspect ratio */
         margin-bottom: 20px; /* Add some space between the image and the text below it */
     }
 
@@ -283,34 +283,47 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-    
+    body {
+        margin: 30px 30px;
+    }
+    .container1 {
+        flex-direction: column; /* Keeps content stacked vertically */
+        align-items: center; /* Centers the content */
+        margin: 0 auto; /* Centers the container with automatic horizontal margins */
+        padding: 20px 10px; /* Adjusts padding for the whole container */
+    }
 
     .container1 img {
-        width: 90%; /* Increase width to take more screen space, given smaller device width */
-        margin-bottom: 15px; /* Adjust space between the image and text */
+        width: 50vw; /* Adjusts image width to be responsive based on viewport width */
+        height: auto; /* Maintains aspect ratio */
+        margin-bottom: 20px; /* Adds some space below the image */
     }
 
     .me {
-        padding: 0 10px; /* Adjust padding to slightly reduce it from the 600-900px settings */
-        font-size: 1.8rem; /* Adjust font size for smaller screens */
+        text-align: center; /* Centers text */
+        font-size: 1.8rem; /* Adjusts the font size for main text */
+        padding: 0; /* Removes padding around text for edge-to-edge design or minimal spacing */
     }
 
     .me .pseudo_info {
-        font-size: 1.4rem; /* Further reduce font size for secondary text */
+        font-size: 1.4rem; /* Adjusts the font size for secondary information */
+        margin-top: 10px; /* Adds a bit more space above this text */
     }
 
     .me .button-container {
-        flex-direction: column; /* Stack buttons vertically to save horizontal space */
-        gap: 10px; /* Reduce gap as buttons are now stacked */
+        flex-direction: row; /* Stacks buttons vertically */
+        width: 100%; /* Ensures the button container takes up the full width */
+        gap: 10px; /* Adds space between stacked buttons */
+        align-items: center; /* Centers the buttons */
     }
 
     .me .button {
-        width: 100%; /* Buttons take full width to easily tap on mobile */
-        padding: 10px; /* Adjust padding for a tighter look */
-        font-size: 0.9rem; /* Adjust font size for buttons */
+        width: auto; /* Allows buttons to size according to their content */
+        padding: 10px 20px; /* Adjusts padding within buttons for a comfortable tap area */
+        font-size: 1rem; /* Keeps button text readable */
+        margin: 0; /* Removes any default margin */
     }
 }
-
 
 
 
@@ -324,7 +337,7 @@ a:hover {
     align-items: flex-start;
     gap: 8px;
     height: auto;
-    min-width: 400px;
+    
     width: 100%;
     margin: 30px auto;
     padding: 20px 30px;
@@ -368,7 +381,7 @@ a:hover {
     font-size: 2rem;
     color: #FFF0E5;
     width: 100%;
-    padding: 0px 20px;
+    padding: 2px 20px;
     border-bottom: 1px solid #FFF0E5;
 }
 
@@ -391,59 +404,55 @@ a:hover {
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
     .container2 {
-        padding: 15px 20px; /* Slightly reduce padding for medium screens */
-        gap: 15px; /* Adjust gap for better space utilization */
+        padding: 20px; /* Provide enough padding for readability */
+        gap: 20px; /* Adjust the gap for visual separation of elements */
     }
 
     .container2 h1 {
-        font-size: 3rem; /* Slightly reduce the font size for medium screens */
-    }
-
-    .test, .container3 {
-        /* Adapt flex layouts if necessary or adjust padding/margins */
-        padding: 0 15px; /* Example adjustment */
+        font-size: 2.8rem; /* Optimize the heading size for medium screens */
     }
 
     .test h2 {
-        font-size: 1.8rem; /* Adjust headings within .test for better fit */
+        font-size: 1.7rem; /* Ensure subheadings are legible but not too large */
     }
 
     .test p {
-        font-size: 1rem; /* Optionally adjust paragraph font size for readability */
+        font-size: 1rem; /* Maintain paragraph readability */
     }
 
     .container3 {
-        gap: 20px; /* Adjust the gap between flex items if .container3 uses flex */
+        flex-direction: column;
+        gap: 20px; /* Keep items in `.container3` well spaced */
     }
 }
+
 @media screen and (max-width: 600px) {
+    body {
+        margin: 30px 30px;
+    }
     .container2 {
-        margin: 20px 10px; /* Adjust margins to fit small screens */
-        padding: 10px; /* Reduce padding to utilize screen space effectively */
-        gap: 10px; /* Reduce gap to maintain layout compactness */
+        
+        padding: 15px; /* Sufficient padding to prevent content from touching the edges */
+        gap: 20px; /* Less gap to save space but maintain separation */
     }
 
     .container2 h1 {
-        font-size: 2.5rem; /* Reduce the font size significantly for small screens */
-    }
-
-    .test, .container3 {
-        /* Further adjust flex layouts or padding/margins for small screens */
-        padding: 0 10px; /* Example adjustment for small screens */
+        font-size: 2.8rem; /* Further reduce for small screens to fit content nicely */
     }
 
     .test h2 {
-        font-size: 1.6rem; /* Further reduce heading sizes within .test for compact layout */
+        font-size: 1.5rem; /* Scale down for small screens for consistency */
     }
 
     .test p {
-        font-size: 0.9rem; /* Reduce paragraph text size for better readability on small screens */
+        font-size: 0.9rem; /* Slightly smaller text for compactness and readability */
     }
 
     .container3 {
-        /* If .container3 changes layout on small screens, apply those changes here */
-        flex-direction: column; /* Ensure vertical stacking for compact navigation */
-        gap: 10px; /* Adjust gap for compactness */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Stack items vertically for better navigation */
+        gap: 20px; /* Tighten the gap for a compact layout */
     }
 }
 
