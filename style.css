@@ -10,6 +10,8 @@ body {
     font-family: "Roboto Slab", serif;
     background-color: #FFF0E5;
     margin: 30px 60px;
+    
+    padding-top: 15vh;
 }
 
 html {
@@ -366,8 +368,21 @@ box-shadow: -8px 8px 0px 0px #FFF0E5;
         width: 100%;
     }
 }
-
-
+.underconstruction {
+    position: fixed; /* Keeps the bar fixed during scrolling */
+    top: 0; /* Aligns the bar to the top of the viewport */
+    left: 0; /* Ensures the bar starts from the very left edge */
+    width: 100vw; /* Sets the width to cover the full viewport width */
+    height: 15vh; /* Adjust the height as needed */
+    background-color: #1D2340; /* Your chosen background color */
+    color: #FFF0E5; /* Your chosen text color */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    z-index: 1000; /* Ensures the bar is above other content */
+    font-size: 1.5rem; /* Adjusts the font size */
+    text-align: center; /* Centers the text inside the bar */
+}
 
 
 
