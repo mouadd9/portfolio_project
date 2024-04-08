@@ -205,7 +205,7 @@ a:hover {
 }
 
 .me .button {
-    /* This styles each button */
+    
     padding: 10px 50px; /* Adjust padding to suit your design */
     font-size: 1rem; /* Set the font size for the text within the buttons */
     font-weight: bold; /* Make the text a bit heavier */
