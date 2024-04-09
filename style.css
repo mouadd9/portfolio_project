@@ -10,7 +10,6 @@ body {
     font-family: "Roboto Slab", serif;
     background-color: #FFF0E5;
     margin: 30px 60px;
-
     padding-top: 15vh;
 }
 
@@ -74,7 +73,7 @@ a:hover {
 .topnav .hamburger {
     background: none;
     transition: all var(--transition-duration) ease-in-out;
-    padding: 5px 5px 0px 5px;
+    padding: 5px 5px 1px 5px;
     border: 2.5px solid #1D2340;
     border-radius: 0.5px;
 }
@@ -283,6 +282,18 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
+    .topnav h1 {
+        font-size: 1.5rem;
+
+    }
+    .topnav .closeburger {
+        
+        transform: scale(0.90);
+    }
+    .topnav .hamburger {
+        
+        transform: scale(0.90);
+    }
     body {
         margin: 30px 30px;
     }
