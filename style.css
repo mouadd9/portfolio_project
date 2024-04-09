@@ -116,7 +116,7 @@ a:hover {
         position: fixed;
         z-index: 500;
         inset: 0;
-        padding: 30px 60px;
+        padding: 30px 30px;
         transform: translate(100vw, 0);
 
         .links {
@@ -294,7 +294,7 @@ a:hover {
     }
 
     .container1 img {
-        width: 50vw; /* Adjusts image width to be responsive based on viewport width */
+        width: 70vw; /* Adjusts image width to be responsive based on viewport width */
         height: auto; /* Maintains aspect ratio */
         margin-bottom: 20px; /* Adds some space below the image */
     }
