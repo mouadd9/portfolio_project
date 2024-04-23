@@ -373,7 +373,7 @@ a:hover {
 
 .test {
     position: relative;
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #1D2340;
@@ -387,18 +387,37 @@ a:hover {
 
 }
 
-.test h2 {
+.test h2{
     background-color: #1D2340;
-    font-size: 2rem;
+    font-size: 2rem; /* Adjust the font-size for h3 if necessary */
     color: #FFF0E5;
     width: 100%;
     padding: 2px 20px;
     border-bottom: 1px solid #FFF0E5;
 }
 
-.test p {
-    padding: 10px 20px;
+ .test h3 {
+    background-color: #1D2340;
+    font-size: 1.6rem; /* Adjust the font-size for h3 if necessary */
+    color: #FFF0E5;
+    width: 100%;
+    padding: 2px 20px;
+    
 }
+.ecole {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* If you want h3 to have a smaller font-size, you can add this */
+
+
+.test p {
+    padding: 5px 20px 5px 20px;
+    color: #FFF0E5; /* Assuming you want the text color to be the same as h2 */
+}
+
+
 
 .test:hover {
 
@@ -424,9 +443,14 @@ a:hover {
     }
 
     .test h2 {
-        font-size: 1.7rem; /* Ensure subheadings are legible but not too large */
+        font-size: 1.8rem; /* Ensure subheadings are legible but not too large */
     }
-
+    .test h3 {
+        
+        font-size: 1.4rem; /* Adjust the font-size for h3 if necessary */
+        
+        
+    }
     .test p {
         font-size: 1rem; /* Maintain paragraph readability */
     }
@@ -452,9 +476,14 @@ a:hover {
     }
 
     .test h2 {
-        font-size: 1.5rem; /* Scale down for small screens for consistency */
+        font-size: 1.6rem; /* Scale down for small screens for consistency */
     }
-
+    .test h3 {
+        
+        font-size: 1.2rem; /* Adjust the font-size for h3 if necessary */
+        
+        
+    }
     .test p {
         font-size: 0.9rem; /* Slightly smaller text for compactness and readability */
     }
