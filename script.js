@@ -13,7 +13,7 @@ function openMenu() {
 
 function closeMenu() {
     menu.style.transition = 'transform 0.5s ease-in-out';
-    menu.style.transform = 'translate(100vw, 0)';
+    menu.style.transform = 'translate(-100vw, 0)';
     isMenuOpen = false;
 }
 
@@ -23,15 +23,19 @@ closeButton.addEventListener('click', closeMenu);
 // Close the menu when a link is clicked
 menuLinks.forEach(link => {
     link.addEventListener('click', () => {
-        if (isMenuOpen && window.innerWidth < 800) { // Checks if the menu is open and the screen width is less than 800px
+        if (isMenuOpen && window.innerWidth <= 800) { // Assumes 800px is the breakpoint for your hamburger menu
             closeMenu();
         }
     });
 });
 
 window.addEventListener('resize', function () {
-    if (window.innerWidth > 800 && isMenuOpen) {
-        menu.removeAttribute('style');
-        isMenuOpen = false; // Reset the menu state
+    // Check if the window is resized to a width greater than your mobile breakpoint
+    if (window.innerWidth > 800) {
+        // Reset the menu state and style
+        menu.style.transition = '';
+        menu.style.transform = '';
+        isMenuOpen = false;
     }
 });
+
