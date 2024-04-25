@@ -39,3 +39,38 @@ window.addEventListener('resize', function () {
     }
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const contactLink = document.getElementById('contactLink');
+    const contactFooter = document.getElementById('contactFooter');
+  
+    contactLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      contactFooter.classList.add('footer-active'); // Add the active class to make the footer pop up
+    });
+  
+    // Event listener to hide the footer when clicking outside of it
+    document.addEventListener('click', function(event) {
+      var isClickInsideFooter = contactFooter.contains(event.target);
+      var isClickOnContactLink = contactLink.contains(event.target);
+  
+      if (!isClickInsideFooter && !isClickOnContactLink) {
+        contactFooter.classList.remove('footer-active'); // Hide the footer
+      }
+    });
+  });
+document.addEventListener('DOMContentLoaded', function() {
+  const modeToggleButton = document.getElementById('toggleMode');
+  const bodyElement = document.body;
+
+  modeToggleButton.addEventListener('click', function() {
+    bodyElement.classList.toggle('night-mode');
+    if (bodyElement.classList.contains('night-mode')) {
+      modeToggleButton.textContent = 'Day Mode';
+    } else {
+      modeToggleButton.textContent = 'Night Mode';
+    }
+  });
+});
+  
+
