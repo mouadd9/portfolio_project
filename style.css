@@ -10,7 +10,7 @@ body {
     font-family: "Roboto Slab", serif;
     background-color: #FFF0E5;
     margin: 30px 40px;
-    padding-top: 15vh;
+   
 }
 
 html {
@@ -99,18 +99,20 @@ a:hover {
 .topnav .hamburger:active {
     box-shadow: 0 0 0 0 var(--color-shadow);
     transform: scale(1.10);
+    transition: all 0.1s ease;
 }
 
 .topnav .closeburger:active {
     box-shadow: 0 0 0 0 #FFF0E5;
     transform: scale(1.10);
+    transition: all 0.1s ease;
 }
 
 
 @media screen and (max-width:900px) {
     .menu {
 
-        margin-top: 15vh;
+        
         background-color: #1D2340;
         position: fixed;
         z-index: 500;
@@ -227,6 +229,7 @@ a:hover {
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s ease;
+   
 
 }
 
@@ -236,6 +239,14 @@ a:hover {
     background-color: #FFF0E5;
     border: 2px solid #1D2340;
     color: #1D2340;
+    
+
+}
+.me .button:active {
+
+    box-shadow: 0 0 0 0 var(--color-shadow);
+    transition: all 0.1s ease;
+    
 
 }
 
