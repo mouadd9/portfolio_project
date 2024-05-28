@@ -9,7 +9,7 @@
 body {
     font-family: "Roboto Slab", serif;
     background-color: #FFF0E5;
-    margin: 30px 40px;
+    margin: 10px 35px;
    
 }
 
@@ -219,6 +219,7 @@ a:hover {
     align-content: flex-start;
     font-size: 3rem;
     padding: 20px;
+    padding-top: 0px;
 
 }
 
@@ -230,7 +231,8 @@ a:hover {
 }
 
 .container1 img {
-
+   width: 400px;
+   height: 400px;
     margin: 0px;
     border: 1px solid #1D2340;
     transition: all 0s ease-in-out;
@@ -301,7 +303,7 @@ a:hover {
 /* Adjustments for medium screens */
 @media screen and (min-width: 600px) and (max-width: 900px) {
     body {
-        margin: 20px 30px;
+        margin: 10px 30px;
     }
     .container1 {
         flex-direction: column; /* Stack content vertically for better readability */
