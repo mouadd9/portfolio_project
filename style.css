@@ -63,8 +63,8 @@ a:hover {
 
 :root {
     --color-shadow: #1D2340;
-    --shadow-offset-horrizontal: -5px;
-    --shadow-offset-vertical: 5px;
+    --shadow-offset-horrizontal: -4px;
+    --shadow-offset-vertical: 4px;
     --shadow-blur: 0px;
     --shadow-spread: 0px;
     --transition-duration: 0.1s;
@@ -76,6 +76,7 @@ a:hover {
     padding: 5px 5px 1px 5px;
     border: 2.5px solid #1D2340;
     border-radius: 0.5px;
+    box-shadow: 0px 0px var(--shadow-blur) var(--shadow-spread) var(--color-shadow);
 }
 
 .topnav .closeburger {
@@ -84,28 +85,27 @@ a:hover {
     padding: 5px 5px 0px 5px;
     border: 2.5px solid #FFF0E5;
     border-radius: 0.5px;
+    box-shadow: 0px 0px var(--shadow-blur) var(--shadow-spread) var(--color-shadow);
 }
 
 .topnav .hamburger:hover {
     box-shadow: var(--shadow-offset-horrizontal) var(--shadow-offset-vertical) var(--shadow-blur) var(--shadow-spread) var(--color-shadow);
-    transform: scale(1.07);
+    transform: translate(4px, -4px);
 }
 
 .topnav .closeburger:hover {
     box-shadow: var(--shadow-offset-horrizontal) var(--shadow-offset-vertical) var(--shadow-blur) var(--shadow-spread) #FFF0E5;
-    transform: scale(1.07);
+    transform: translate(4px, -4px);
 }
 
 .topnav .hamburger:active {
     box-shadow: 0 0 0 0 var(--color-shadow);
-    transform: scale(1.07);
-    transition: all 0.1s ease;
+    transform: translate(0px, 0px);
 }
 
 .topnav .closeburger:active {
     box-shadow: 0 0 0 0 #FFF0E5;
-    transform: scale(1.07);
-    transition: all 0.1s ease;
+    transform: translate(0px, 0px);
 }
 
 
@@ -201,15 +201,10 @@ a:hover {
     height: auto;
     justify-content: flex-start;
     box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
+    
 
 }
 
-.container1:hover {
-
-    transform: scale(1.02);
-
-}
 
 .me {
 
@@ -220,7 +215,13 @@ a:hover {
     font-size: 3rem;
     padding: 20px;
     padding-top: 0px;
+    transition: all 0.3s ease-in-out;
 
+}
+
+.me:hover {
+    transform: translate(4px, -4px); 
+    
 }
 
 .me .pseudo_info {
@@ -235,13 +236,15 @@ a:hover {
    height: 400px;
     margin: 0px;
     border: 1px solid #1D2340;
-    transition: all 0s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0px 0px var(--shadow-blur) var(--shadow-spread) var(--color-shadow);
 
 }
 
 .container1 img:hover {
 
     box-shadow: -8px 8px var(--shadow-blur) var(--shadow-spread) var(--color-shadow);
+    transform: translate(8px, -8px); 
 
 }
 
@@ -269,14 +272,16 @@ a:hover {
     border-radius: 0.5rem;
     cursor: pointer;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px var(--shadow-blur) var(--shadow-spread) var(--color-shadow);
    
 
 }
 
 .me .button:hover {
 
-    box-shadow: -8px 8px var(--shadow-blur) var(--shadow-spread) var(--color-shadow);
+    box-shadow: -7px 7px var(--shadow-blur) var(--shadow-spread) var(--color-shadow);
+    transform: translate(7px, -7px); 
     background-color: #FFF0E5;
     border: 2px solid #1D2340;
     color: #1D2340;
@@ -287,6 +292,7 @@ a:hover {
 
     box-shadow: 0 0 0 0 var(--color-shadow);
     transition: all 0.1s ease;
+    transform: translate(0px, 0px); 
     
 
 }
@@ -458,6 +464,7 @@ a:hover {
     border: 1px solid #FFF0E5;
 
     overflow: hidden;
+    box-shadow: 0px 0px 0px 0px #FFF0E5;
 
 
 }
@@ -497,6 +504,7 @@ a:hover {
 .test:hover {
 
     box-shadow: -8px 8px 0px 0px #FFF0E5;
+    transform: translate(7px, -7px) ;
 }
 
 .container3 {
