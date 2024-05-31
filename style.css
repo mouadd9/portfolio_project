@@ -546,7 +546,7 @@ a:hover {
     color: #FFF0E5;
     width: 100%;
     padding: 2px 20px;
-    border-bottom: 1px solid #FFF0E5;
+    border-bottom: 1px solid rgb(255, 153, 173);
 }
 
  .test h3 {
