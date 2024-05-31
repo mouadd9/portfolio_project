@@ -427,11 +427,11 @@ a:hover {
     .container1 img {
 
         width: auto; /* Adjust image width to be responsive within the container */
-        height: 378.50px; /* Maintain aspect ratio */
+        height: 308.50px; /* Maintain aspect ratio */
         /* Add some space between the image and the text below it */
     }
     .left-border{
-        height: 378.50px;
+        height: 308.50px;
         margin: 9px;
         margin-left: 10px;
         padding-left: 20px;
