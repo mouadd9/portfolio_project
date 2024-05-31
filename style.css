@@ -48,6 +48,7 @@ html {
     display: flex;
     height: 10vh;
     width: 100%;
+    margin-bottom: 19px;
     
     justify-content: space-between;
     align-items: center;
@@ -57,7 +58,7 @@ html {
 h1 {
     font-size: 2rem;
     padding-bottom: 2.2px;
-    color: crimson;
+    color:rgb(255, 45, 87);
     cursor: default;
     font-family: "DM Serif Display", serif;
     font-weight: 600;
@@ -235,7 +236,7 @@ a:hover {
 }
 
 .me p .name{
-    color:crimson;
+    color:rgb(255, 45, 87);
     font-size: 3.3rem;
     
 }
@@ -259,13 +260,13 @@ a:hover {
 
 .me .pseudo_info {
     opacity: 0;
-    color:crimson;
+    color:rgb(255, 45, 87);
     margin-top: 10px;
     padding-top: 0px;
     font-size: 2rem;
     margin-left: 3px;
     padding-left: 20px;
-    border-left:5px solid crimson ;
+    border-left:5px solid rgb(255, 45, 87);
 }
 
 .observe {
@@ -427,11 +428,11 @@ a:hover {
     .container1 img {
 
         width: auto; /* Adjust image width to be responsive within the container */
-        height: 308.50px; /* Maintain aspect ratio */
+        height: 295px; /* Maintain aspect ratio */
         /* Add some space between the image and the text below it */
     }
     .left-border{
-        height: 308.50px;
+        height: 295px;
         margin: 9px;
         margin-left: 10px;
         padding-left: 20px;
