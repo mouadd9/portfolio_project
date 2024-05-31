@@ -58,7 +58,7 @@ html {
 h1 {
     font-size: 2rem;
     padding-bottom: 2.2px;
-    color:rgb(255, 45, 87);
+    color: rgb(255, 64, 102);
     cursor: default;
     font-family: "DM Serif Display", serif;
     font-weight: 600;
@@ -236,7 +236,7 @@ a:hover {
 }
 
 .me p .name{
-    color:rgb(255, 45, 87);
+    color: rgb(255, 64, 102);
     font-size: 3.3rem;
     
 }
@@ -260,13 +260,13 @@ a:hover {
 
 .me .pseudo_info {
     opacity: 0;
-    color:rgb(255, 45, 87);
+    color:rgb(255, 104, 134);
     margin-top: 10px;
     padding-top: 0px;
     font-size: 2rem;
     margin-left: 3px;
     padding-left: 20px;
-    border-left:5px solid rgb(255, 45, 87);
+    border-left:5px solid rgb(255, 64, 102);
 }
 
 .observe {
@@ -434,6 +434,7 @@ a:hover {
     .left-border{
         height: 295px;
         margin: 9px;
+        margin-bottom: 13px;
         margin-left: 10px;
         padding-left: 20px;
         border-left:5px solid black;
@@ -443,24 +444,25 @@ a:hover {
 
     .me {
         padding-left: 8px;
-        font-size: 1.9rem; /* Adjusts the font size for main text */
+        font-size: 2rem; /* Adjusts the font size for main text */
         /* Removes padding around text for edge-to-edge design or minimal spacing */
     }
     .me p .name{
-        font-size: 2.1rem;
+        font-size: 2.15rem;
         
     }
 
     .me .pseudo_info {
-        font-size: 1.5rem; /* Adjusts the font size for secondary information */
-        margin-top: 10px; /* Adds a bit more space above this text */
+        font-size: 1.55rem; /* Adjusts the font size for secondary information */
+    margin-top: 13px; /* Adds a bit more space above this text */
     }
 
     .me .button-container {
         flex-direction: row; /* Stacks buttons vertically */
         width: 100%; /* Ensures the button container takes up the full width */
-        gap: 10px; /* Adds space between stacked buttons */
+        gap: 25px; /* Adds space between stacked buttons */
         align-items: center; /* Centers the buttons */
+        margin-top: 30px;
     }
 
     .me .button {
