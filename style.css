@@ -443,7 +443,7 @@ a:hover {
 
     .me {
         padding-left: 8px;
-        font-size: 1.8rem; /* Adjusts the font size for main text */
+        font-size: 1.9rem; /* Adjusts the font size for main text */
         /* Removes padding around text for edge-to-edge design or minimal spacing */
     }
     .me p .name{
@@ -452,7 +452,7 @@ a:hover {
     }
 
     .me .pseudo_info {
-        font-size: 1.4rem; /* Adjusts the font size for secondary information */
+        font-size: 1.5rem; /* Adjusts the font size for secondary information */
         margin-top: 10px; /* Adds a bit more space above this text */
     }
 
