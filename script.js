@@ -72,5 +72,33 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  function handleIntersect(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          
+            entry.target.style.opacity = 1;  // Make the textbox fully visible
+        } else {
+         
+            entry.target.style.opacity = 0;  // Hide the textbox when it leaves the viewport
+        }
+    });
+}
+const options = {
   
+  threshold: 0.50 // Trigger when 50% of the textbox is visible
+};
+
+const observer = new IntersectionObserver(handleIntersect, options);
+
+ const elementsToObserve = document.querySelectorAll('.observe')
+
+  elementsToObserve.forEach(element => {
+    observer.observe(element);
+});
+
+ 
+});
+
 
