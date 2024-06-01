@@ -9,6 +9,7 @@
 .dm-serif-display-regular {
     font-family: "DM Serif Display", serif;
     font-weight: 500;
+    transition: transform 0.3s ease-in-out;
     font-style: normal;
   }
 
@@ -255,7 +256,7 @@ a:hover {
 
 }
 
-.me:hover {
+.dm-serif-display-regular:hover {
     transform: translate(4px, -4px); 
     
 }
